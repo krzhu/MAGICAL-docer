@@ -98,7 +98,6 @@ RUN apt-get install libboost-all-dev
 RUN mkdir install && cd install && git clone https://github.com/magical-eda/MAGICAL.git \
         && cd MAGICAL && git checkout docker \
         && git submodule init && git submodule update \
-.       && cd anaroute && git checkout cicc2021 \
         && cd /home/jovyan/install/MAGICAL/device_generation && git checkout sky130 \
         && cd /home/jovyan/install/MAGICAL\
         && git checkout skywater \
